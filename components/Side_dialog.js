@@ -69,7 +69,7 @@ const color_calculator = (id) => {
     }
 }
 
-export default ({ questions }) => {
+export default function Side_dialog({ questions }) {
     const arr = questions.slice()
     const arr1 = []
     while (arr.length) arr1.push(arr.splice(0, 4))
