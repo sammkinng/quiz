@@ -107,14 +107,14 @@ export default ({ questions }) => {
             </thead>
             <tbody>
                 {arr1.map(arr2 => {
-                    return <tr>
+                    return <tr key={arr2}>
                         {arr2.map(ques => {
-                            return <td style={{
+                            return <td key={ques} style={{
                                 width: "100px",
                                 padding: "7.5px 20px",
                                 height: '75px'
                             }}>
-                                <Circlular_ques_btn key={ques} value={ques.no} color={color_calculator(ques.no - 1)} radius={30} />
+                                <Circlular_ques_btn value={ques.no} color={color_calculator(ques.no - 1)} radius={30} />
                             </td>
                         })}
                     </tr>
