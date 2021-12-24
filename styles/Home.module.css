@@ -1,15 +1,18 @@
 .container {
   padding: 0 2rem;
 }
-
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+}
+
+.fbox{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 2rem 0;
+}
+
+.ans:hover{
+color: blue;
+border-color: blue !important;
 }
 
 .footer {
